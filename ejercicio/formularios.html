@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Formulario de Suscripción a Apple</h2>
+    <form action="#" method="post">
+        <fieldset>
+            <legend>Datos del Usuario</legend>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+            </div>
+            <div>
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" required>
+            </div>
+            <div>
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+            </div>
+            <div>
+                <label for="producto_interes">Producto de Interés:</label>
+                <select id="producto_interes" name="producto_interes" required>
+                    <option value="">Selecciona un producto</option>
+                    <option value="iPhone">iPhone</option>
+                    <option value="iPad">iPad</option>
+                    <option value="MacBook">MacBook</option>
+                    <option value="Apple Watch">Apple Watch</option>
+                    <option value="AirPods">AirPods</option>
+                    <option value="Otros">Otros</option>
+                </select>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Suscripción a Apple</legend>
+            <div>
+                <label for="suscripcion_apple">¿Tienes suscripción a Apple?</label>
+                <input type="checkbox" id="suscripcion_apple" name="suscripcion_apple">
+            </div>
+        </fieldset>
+        <button type="submit">Enviar</button>
+    </form>
+
+
+</body>
+</html>

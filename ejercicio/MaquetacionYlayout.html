@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal de Apple</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            padding: 10px;
+        }
+
+        header select {
+            width: 40%;
+            padding: 8px;
+            border-radius: 8px;
+        }
+
+        nav {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            background-color: #282828;
+        }
+
+        nav ul {
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            list-style: none;
+        }
+
+        nav ul li {
+            font-size: 18px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        .container{
+            display: flex;
+            gap: 20px;
+            padding: 10px;
+            justify-content: space-between;
+        }
+
+        .container aside{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container aside ul{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .container aside ul li{
+            list-style: none;
+            font-size: 18px;
+        }
+        .container aside ul li a{
+            color: dodgerblue;
+            text-decoration: none;
+            cursor: pointer;
+
+        }
+        main{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            background-color: #eee;
+            padding: 10px;
+        }
+
+        main h1{
+            color: dodgerblue;
+        }
+        main p{
+            text-align: justify;
+            font-size: 18px;
+        }
+        main div{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+        }
+        main div img{
+            width: 500px;
+            border-radius: 8px;
+        }
+        .if{
+            display: flex;
+            padding: 10px;
+        }
+        .if iframe{
+            width: 600px;
+        }
+        footer{
+            padding: 10px;
+            background-color: #282828;
+            color: #fff;
+            text-align: center;
+            font-size: 24px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <select>
+            <option value="us">Estados Unidos</option>
+            <option value="uk">Reino Unido</option>
+            <option value="mx">México</option>
+            <option value="mx">Korea</option>
+            <option value="mx">Argentina</option>
+            <option value="mx">Colombia</option>
+
+        </select>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Mac</a></li>
+            <li><a href="#">iPhone</a></li>
+            <li><a href="#">iPad</a></li>
+            <li><a href="#">Watch</a></li>
+            <li><a href="#">AirPods</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+        <aside>
+            <h2>Opciones</h2>
+            <ul>
+                <li><a href="#">Servicio al Cliente</a></li>
+                <li><a href="#">Compras</a></li>
+                <li><a href="#">Entretenimiento</a></li>
+                <li><a href="#">Soporte</a></li>
+            </ul>
+        </aside>
+        <main>
+            <h1>iPhone 15</h1>
+            <p>El iPhone 15 es la última innovación de Apple en telefonía móvil...</p>
+            <div>
+                <!-- Espacios para insertar imágenes -->
+                <img src="iphonee.jpg" width="700" alt="Imagen 1">
+                <img src="iphone15.jpg" width="350" alt="Imagen 2">
+            </div>
+            <p>Nuevo iPhone, Nueva Camara, Nueva Euphoria. El iPhone 15 es el primer iPhone diseñado con titanio de calidad aeroespacial, la misma aleación que se usa en las naves espaciales enviadas a Marte.
+
+                El titanio es uno de los metales con mejor relación dureza/peso, por lo que este es el iPhone Pro más ligero que hemos diseñado hasta ahora. Sentirás la diferencia en cuanto lo saques de la caja.
+            </p>
+
+           <div class="if">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/XHTrLYShBRQ?si=6jOFzFWWtcFNsNI-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+           </div>
+        </main>
+
+    </div>
+    <footer>
+        <p>Autor © 2024 Juan Villalobos</p>
+    </footer>
+</body>
+
+</html>
